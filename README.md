@@ -1,20 +1,37 @@
-# Facial Emotion Detection using CNN
+# Facial Emotion Detection using CNN 🎭🧠
 
-This repository contains the full source code used for real-time facial emotion recognition using deep learning and OpenCV. The model classifies faces into five emotions: Angry, Happy, Neutral, Sad, and Surprise.
+This project implements a real-time facial emotion recognition system using a custom Convolutional Neural Network (CNN) model trained on the FER-2013 dataset. The system detects facial expressions from a live webcam stream and classifies them into five categories: **Angry**, **Happy**, **Neutral**, **Sad**, and **Surprise**.
 
-## 📂 Contents
+---
+
+## 📁 Project Structure
 
 | File | Description |
 |------|-------------|
-| `real_time_emotion_detection.py` | Webcam-based real-time emotion detection (Grayscale) |
-| `real_time_emotion_detection_rgb.py` | Real-time detection with RGB preprocessing |
-| `evaluate_model.py` | Generates accuracy and classification report |
-| `confusion_matrix.py` | Generates and plots the confusion matrix |
-| `train_model.py` | Full model training script with augmentation and validation |
-| `requirements.txt` | Required libraries |
+| `main.py` | Core training and model saving script |
+| `detect_emotion_live.py` | Real-time emotion detection using webcam (grayscale) |
+| `evaluate_model.py` | Model evaluation on validation data and classification report |
+| `confusion_matrix.py` | Generate confusion matrix heatmap |
+| `Training vs validation loss curve` | Code to plot accuracy and loss graphs |
+| `requirements.txt` | List of required Python libraries |
+
+---
+
+## 🔧 Technologies Used
+
+- Python 3.6 
+- TensorFlow / Keras  
+- OpenCV  
+- NumPy  
+- Matplotlib & Seaborn  
+- Scikit-learn  
+
+---
 
 ## ▶️ How to Run
 
-1. Install dependencies:
+### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
+
+python detect_emotion_live.py
